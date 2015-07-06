@@ -1,0 +1,10 @@
+.inline-list {
+	width: 200px;
+	background: red;
+	li {
+		display: inline;
+	}
+	li > div{
+		display: inline;
+	}
+}

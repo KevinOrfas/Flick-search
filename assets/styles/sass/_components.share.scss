@@ -1,0 +1,18 @@
+.share {
+	float: right;
+	padding: .5em;
+	background-color: rgba(102,8,0,1);
+	color: orange;
+	position: relative;
+}
+
+.share__buttons {
+	display: none;
+}
+
+.share__tooltip {
+	&:hover {
+		color: #fcb712;
+    	color: rgba(252,183,18,1);
+	}
+}

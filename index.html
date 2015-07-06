@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ticketmaster Flickr</title>
+
+     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!--removeIf(production)-->
+    <link rel='stylesheet' href='assets/styles/app.css' />
+    <!--endRemoveIf(production)-->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- inject:css -->
+    <!-- endinject -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  </head>
+  <body>
+    <header class="module header">
+         <h1 class="header__element header__element-title">Photos</h1>
+         <form class="js-form-search header__element header__element-search" action="/search" method="get" role="search">
+            <label for="query" class="box">
+              <div class="search">
+
+                  <input type="search" name="query" class="search__query" id="query" placeholder="Search" required />
+                  <span class="search__icon"><i class="fa fa-search"></i><button type="submit"></button></span>
+              </div>
+            </label>
+         </form>
+      </header>
+
+      <div class="module">
+         <div class="js-gallery gallery">
+            <img src="" class="js-gallery__image" />
+             <div class="share"><a href="" class="share__tooltip">SHARE</a></div>
+             <!--   <ul id="social" class="share__buttons cf inline-list">
+                <li>
+                    <a href="http://twitter.com/share" class="socialite twitter-share" data-text="Socialite.js" data-url="http://socialitejs.com" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a>
+                </li>
+                <li>
+                    <a href="http://www.facebook.com/sharer.php?u=http://www.socialitejs.com&t=Socialite.js" class="socialite facebook-like" data-href="http://socialitejs.com" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a>
+                </li>
+                <li>
+                    <a href="https://plus.google.com/share?url=http://socialitejs.com" class="socialite googleplus-one" data-size="tall" data-href="http://socialitejs.com" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a>
+                </li>
+              </ul>
+             </div> -->
+
+            <button class="js-gallery__arrow--left gallery__arrow gallery__arrow--left">
+            <span class="visually-hidden">Previous photo</span>
+            </button>
+            <button class="js-gallery__arrow--right gallery__arrow gallery__arrow--right">
+               <span class="visually-hidden">Next photo</span>
+            </button>
+         </div>
+
+         <p class="js-gallery__title"></p>
+
+      <div class="module thumbnails">
+         <ul class="js-thumbnails__list thumbnails__list"></ul>
+         <ol class="js-thumbnails__pager thumbnails__pager"></ol>
+      </div>
+
+
+    <!--removeIf(production)-->
+      <script type="text/javascript" src="assets/scripts/app.js"></script>
+      <script src="assets/scripts/utility.js"></script>
+      <script src="assets/scripts/gallery.js"></script>
+      <script src="assets/scripts/flickr.js"></script>
+      <script src="assets/scripts/main.js"></script>
+
+      <script src="assets/scripts/socialite.js"></script>
+      <script>
+      (function() {
+        Socialite.load();
+      })();
+    </script>
+    <!--endRemoveIf(production)-->
+
+    <!-- inject:js -->
+    <!-- endinject -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  	<script>
+  	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  	e.src='//www.google-analytics.com/analytics.js';
+  	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  	ga('create','UA-XXXXX-X');ga('send','pageview');
+  	</script>
+  </body>
+</html>
